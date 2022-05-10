@@ -1,0 +1,445 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*Cuerpo de HTML*/
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(img/thumb-1920-796230.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #1bf307d7;
+    text-align: center;
+}
+
+header .contador{
+    width: auto;
+    height: 40px;
+    }
+
+header .textos{
+    margin-top: 150px;
+}
+
+header .titulo{
+    font-size: 72px;
+}
+
+header .subtitulo{
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+header .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 220px;
+    border: 3px solid #1bf307d7;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Contenido de Section */
+.miembros{
+    background: #000000;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.acerca-de{
+    text-align: center;
+}
+
+.sobre-nosotros{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan{
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .botonn{
+    display: inline-block;
+    padding: 6px;
+    width: 300px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid #1bf307d7;
+    color: rgb(24, 16, 16);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 26px;
+}
+
+/* Contenido de class: Miembros */
+
+.cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 6px 0 rgba(255, 255, 255, 0.85);
+}
+
+.cards img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* Contenido de Class= Footer-Contenedor*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+footer{
+    background: #2c3e50;
+    height: auto;
+}
+
+.titulo-footer,
+.subtitulo-footer{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.subtitulo-footer{
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    padding: 23px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
+}
+
+/* Tamaño para reducir en celular */
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header .textos {
+        margin-top: 90px;
+    }
+    header .subtitulo{
+        font-size: 26px;
+        margin-top: 5px;
+    }
+    header .titulo {
+        font-size: 60px;
+    }
+    header .boton{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .none {
+        display: none
+    }
+    .acerca-de .sobre-nosotros{
+        font-size: 45px;
+    }
+    .acerca-de .parrafo{
+        font-size: 13px;
+        text-align: center;
+    }
+    .acerca-de .botonn{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .miembros .sobre-nosotros{
+        font-size: 45px;
+        margin-top: 40px;
+    }
+    .miembros .slogan{
+        font-size: 20px;
+        font-weight: 80;
+    }
+    .card h4{
+        font-size: 20px;
+    }
+    .imagenes {
+        flex-grow: 1;
+    }
+    .card {
+        width: 85%;
+    }
+    .titulo-footer{
+        font-size: 45px;
+    }
+    .subtitulo-footer{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header .titulo{
+        font-size: 45px;
+    }
+    header .subtitulo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    header .boton{
+        font-size: 10px;
+    }
+    .acerca-de .sobre-nosotros{
+        font-size: 35px;
+    }
+    .acerca-de .slogan{
+        font-size: 20px;
+    }
+    .acerca-de .parrafo{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .acerca-de .botonn{
+        font-size: 12px;
+    }
+    .miembros .sobre-nosotros{
+        font-size: 35px;
+        margin-top: 25px;
+    }
+    .miembros .slogan{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .cards{
+        width: 85%;
+    }
+    .card h4{
+        font-size: 15px;
+    }
+    .titulo-footer{
+        font-size: 35px;
+    }
+    .subtitulo-footer{
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    header .contador{
+        width: auto;
+        height: 35px;
+        }
+    header .textos {
+        margin-top: 100px;
+    }
+    header .titulo {
+        font-size: 35px;
+    }
+    header .subtitulo {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .acerca-de .sobre-nosotros {
+        font-size: 28px;
+    }
+    .acerca-de .slogan {
+        font-size: 24px;
+    }
+    .acerca-de .parrafo{
+        font-size: 11px;
+        text-align: center;
+    }
+    .acerca-de .botonn{
+        font-size: 10px;
+        text-align: center;
+        border: none;
+        color: #1bf307d7;
+        text-decoration-line: line-through;
+    }
+    .miembros .sobre-nosotros{
+        font-size: 28px;
+    }
+    .miembros .slogan{
+        font-size: 12px;
+    }
+    .cards{
+        width: 75%;
+        height: auto;
+    }
+    .card h4{
+        font-size: 13px;
+    }
+    .contenedor{
+        padding: 44px 0;
+    }
+    .titulo-footer{
+        font-size: 28px;
+    }
+    .subtitulo-footer{
+        font-size: 13px;
+        margin-bottom: 38px;
+    }
+    form{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:350px) {
+    header .contador{
+    width: auto;
+    height: 25px;
+    }
+    .acerca-de .botonn{
+        font-size: 12px;
+    }
+    .miembros .cards{
+        width: 75%;
+    }
+    .miembros .cards img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+    .miembros .card{
+        height: 180px;
+    }
+    .card h4{
+        font-size: 10px;
+    }
+    .card p{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .acerca-de .botonn{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .acerca-de .botonn{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .acerca-de .botonn{
+        font-size: 8px;
+        font-weight: 300;
+    }
+}
